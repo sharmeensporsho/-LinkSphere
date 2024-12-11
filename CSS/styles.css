@@ -1,0 +1,397 @@
+:root {
+  --primary-bg: #c19e9e3d;
+  --secondary-bg: #f9f9f995;
+  --card-bg: rgba(40, 40, 40, 0.688);
+  --text-color: #ffffff;
+  --shadow-color: #050505;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(45deg, var(--primary-bg), var(--secondary-bg));
+  min-height: 120vh;
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+
+
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.profile-img {
+  width: 130px;
+  height: 260px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  background: var(--secondary-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img i {
+  font-size: 5rem;
+  color: var(--text-color);
+}
+
+.section {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  backdrop-filter: blur(9px);
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+.social-links {
+  display: grid;
+  gap: 1.7rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  padding: 2.2rem;
+  border-radius: 15px;
+  background: var(--card-bg);
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.email .icon {
+  background: #ea4335;
+}
+
+.github .icon {
+  background: #000000;
+}
+
+.linkedin .icon {
+  background: #1d86f0;
+}
+
+.twitter .icon {
+  background: #0880e2;
+}
+
+.facebook .icon {
+  background: #006dfc;
+}
+
+.instagram .icon {
+  background: linear-gradient(45deg, #c817e7, #c302f3);
+}
+
+.youtube .icon {
+  background: #ff0000;
+}
+
+.spotify .icon {
+  background: #1db954;
+}
+
+.telegram .icon {
+  background: #0088cc;
+}
+
+.whatsapp .icon {
+  background: #25d366;
+}
+
+.soundcloud .icon {
+  background: #ff7700;
+}
+
+.threads .icon {
+  background: #000000;
+}
+
+.pinterest .icon {
+  background: #e60023;
+}
+
+.quora .icon {
+  background: #b92b27;
+}
+
+.website .icon {
+  background: #0226f3;
+}
+
+.linktree .icon {
+  background: #07f332;
+}
+
+.resume .icon {
+  background: #d0f441;
+}
+
+.stackoverflow .icon {
+  background: #ff6a00;
+}
+
+.leetcode .icon {
+  background: #08e44e;
+}
+
+.dev .icon {
+  background: #0a0a0a;
+}
+
+.mastodon .icon {
+  background: #5252ff;
+}
+
+.bluesky .icon {
+  background: #fcfcfc;
+}
+
+.portfolio .icon {
+  background: linear-gradient(45deg, #027afa, #04d1ff);
+}
+
+.orcid .icon {
+  background: #43E660;
+
+}
+.xda .icon {
+  background: linear-gradient(45deg, #a36cdd, #04d1ff);
+}
+.linksphere .icon {
+  background: linear-gradient(45deg, #fabc02, #04d1ff);
+}
+.contact .icon {
+  background: linear-gradient(45deg, #da6eed, #b12dc99d);
+}
+
+.business-email .icon {
+  background: linear-gradient(45deg, #ed3e09, #ff9900);
+}
+
+.web-studio .icon {
+  background: linear-gradient(45deg, #e43131, #88fa05);
+}
+
+/* Hover Effects */
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.social-link:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .social-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .social-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Hover icon animation */
+.social-link:hover .icon i {
+  animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.portfolio:hover .icon,
+.contact:hover .icon,
+.business-email:hover .icon,
+.web-studio:hover .icon {
+  transform: rotate(5deg);
+}
+
+.portfolio .icon,
+.contact .icon,
+.business-email .icon,
+.web-studio .icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .icon::after,
+.contact .icon::after,
+.business-email .icon::after,
+.web-studio .icon::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+.portfolio:hover,
+.contact:hover,
+.business-email:hover,
+.web-studio:hover {
+  background: rgba(11, 10, 10, 0.41);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.portfolio::after,
+.contact::after,
+.business-email::after,
+.web-studio::after {
+  content: "New";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff4081;
+  color: rgb(255, 255, 255);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 1rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.portfolio:hover::after,
+.contact:hover::after,
+.business-email:hover::after,
+.web-studio:hover::after {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.fiverr-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+}
+
+.fiverr-icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #1dbf73;
+  /* Fiverr green color */
+  color: rgb(255, 255, 255);
+  padding: 0 0px;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.fiverr-icon:hover {
+  background-color: #06ff6e;
+  /* Darker green on hover */
+}
+
+.icon {
+  font-size: 30px;
+  margin-right: 9px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 8px;
+}
+
+.fiverr-icon:focus {
+  outline: none;
+}
+
+.footer hr {
+  background-color: #8392a5;
+}
+
+.footer p:first-child {
+  color: #c0ccda;
+}
+
+
+.footer #hugo:hover {
+  margin-right: 5px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
