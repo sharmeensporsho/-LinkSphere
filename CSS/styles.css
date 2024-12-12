@@ -74,6 +74,16 @@ body {
   gap: 1.7rem;
 }
 
+.social-links-mastodon {
+  display: list-item;
+  width: 20%;
+  margin-top: 15px;
+  padding: 5px;
+  gap: 1.2rem;
+  background: var(--text-color);
+  
+}
+
 .social-link {
   display: flex;
   align-items: center;
@@ -184,6 +194,7 @@ body {
 .bluesky .icon {
   background: #fcfcfc;
 }
+
 
 .portfolio .icon {
   background: linear-gradient(45deg, #027afa, #04d1ff);

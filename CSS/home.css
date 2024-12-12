@@ -1,5 +1,5 @@
 .home {
-    height: 60vh;
+    height: 80vh;
     padding: 1rem;
     margin: 1rem;
     overflow: hidden;
@@ -30,8 +30,8 @@
   }
   
   .home img {
-    width: 155px;
-    height: 165px;
+    width: 180px;
+    height: 180px;
     background-color: #ffffff;
     padding: 2px;
     margin-bottom: 2px;
